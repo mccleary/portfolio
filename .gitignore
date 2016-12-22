@@ -1,0 +1,6 @@
+.DS_Store
+/images
+node_modules
+qrcode.jpeg
+qrcode.png
+qrcode.svg
