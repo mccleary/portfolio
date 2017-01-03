@@ -49,13 +49,14 @@ $('form').submit(function(event) {
 
   request = $.ajax({
     url: 'contact.php',
+    // url: 'trista_mccleary@yahoo.com',
     type: 'post',
     data: serializedData
   });
 
   request.done(function (response, textStatus, jqXHR){
     $('p.error').hide();
-    $('p.message').html('Contact Form Submitted! We will be in touch soon.').fadeOut(2000);
+    $('p.message').html('Contact Form Submitted! I will be in touch soon.').fadeOut(2000);
   });
 
   request.fail(function (jqXHR, textStatus, errorThrown){
