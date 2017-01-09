@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 @import url(http://fonts.googleapis.com/css?family=Kristi|Montserrat:400,700);
-.container:after, .skills:after, .isotope:after {
+.container:after, .skills:after {
   clear: both;
   content: ".";
   display: block;
@@ -9,7 +9,7 @@
   line-height: 0;
   overflow: hidden; }
 
-.featured .block img, .isotope .element-item img {
+.featured .block img, .element-item img {
   display: block;
   width: 100%;
   height: 300px; }
@@ -308,8 +308,8 @@ nav ul {
   position: relative;
 }
   .skills h2, .skills h3, .skills h4 {
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 20px;
+    line-height: 50px;
     font-weight: normal;
     text-transform: none;
     }
@@ -318,6 +318,13 @@ nav ul {
     font-size: 36px;
     margin: 0 auto 20px;
   }
+
+  #skills {
+    display: block;
+    text-align: center;
+    float: left;
+  }
+
 
 .fancy {
   text-transform: uppercase;
@@ -436,15 +443,15 @@ form input, form textarea, form select, form button {
   border-bottom: 1px solid #a38b87;
   color: #fbd1c8;
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 700;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   width: 100%;
   margin: 25px 0 0;
   display: inline-block;
   padding: 0 0 10px; }
 form textarea {
-  min-height: 100px;
+  min-height: 200px;
   resize: none;
   outline: none; }
 form button {
