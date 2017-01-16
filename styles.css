@@ -72,6 +72,14 @@ a {
   max-width: 1040px;
   position: relative; }
 
+.container, .projects {
+  padding-top: 40px;
+}
+
+/*#projects .browse img {
+  margin-right: 0.48077%;
+}*/
+
 p {
   margin: 0 0 1em;
   line-height: 1.5em;
@@ -229,7 +237,7 @@ nav ul {
 .block {
   float: left;
   width: 33.01282%;
-  margin-right: 0.48077%;
+  /*margin-right: 0.48077%;*/
   position: relative; }
   .block:last-child {
     margin-right: 0; }
@@ -303,28 +311,36 @@ nav ul {
   box-shadow: 0 -5px 0 rgba(91, 81, 86, 0.05); }
 
 .skills {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   display: inline-block;
   position: relative;
 }
   .skills h2, .skills h3, .skills h4 {
     font-size: 20px;
-    line-height: 50px;
+    /*line-height: 50px;*/
     font-weight: normal;
     text-transform: none;
     }
   .skills i {
     color: #fbd1c8;
-    font-size: 36px;
-    margin: 0 auto 20px;
+    font-size: 75px;
+    margin: 0 auto 0;
   }
 
   #skills {
-    display: block;
+    display: inline-block;
     text-align: center;
-    float: left;
+    /*float: left;*/
   }
 
+.skills, .col-md-12, .block {
+  display: inline-block;
+  /*padding-bottom: 20px;*/
+}
+
+.devicon-nodejs-plain-wordmark.pink {
+  font-size: 75px;
+}
 
 .fancy {
   text-transform: uppercase;
@@ -337,7 +353,7 @@ nav ul {
     .fancy span:before, .fancy span:after {
       content: "";
       position: absolute;
-      height: 1px;
+      height: 2px;
       background: #fbd1c8;
       top: 8px;
       width: 600px; }
@@ -383,7 +399,7 @@ nav ul {
   .contact h3 {
     text-transform: uppercase;
     font-size: 30px;
-    margin-bottom: 40px; }
+    margin-bottom: 10px; }
     .contact h3 span {
       color: white; }
 
@@ -397,9 +413,13 @@ nav ul {
 .details {
   float: left; }
 
+.details p {
+  display: inline-block;
+}
+
 .widget {
   padding: 0 2% 0 60px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   min-height: 80px;
   width: 50%;
   float: left;
@@ -492,7 +512,7 @@ form :-ms-input-placeholder {
 .footer {
   background: white;
   clear: both;
-  padding: 30px 0;
+  padding: 10px 0;
   text-align: center;
   width: 100%; }
   .footer p, .footer a {
