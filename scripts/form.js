@@ -8,7 +8,7 @@ $('form').submit(function(event) {
 
   $('input[name="name"], input[name="email"], textarea').removeClass('error');
 
-  if ($('input[name="name"]').val() == '') {
+  if ($('input[name="name"]').val() === '') {
     $('p.error').addClass('active').html('Please enter your name.');
     $('input[name="name"]').focus();
     return false;
@@ -19,7 +19,7 @@ $('form').submit(function(event) {
     return regex.test(email);
   }
 
-  if ($('input[name="email"]').val() == '') {
+  if ($('input[name="email"]').val() === '') {
     $('p.error').addClass('active').html('Please enter your email.');
     $('input[name="email"]').focus();
     return false;
@@ -31,7 +31,7 @@ $('form').submit(function(event) {
     return false;
   }
 
-  if ($("textarea").val() == "") {
+  if ($("textarea").val() === "") {
     $('p.error').addClass('active').html('Please enter your message.');
     $('textarea').focus();
     return false;
