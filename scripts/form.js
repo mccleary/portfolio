@@ -6,7 +6,7 @@ var request;
 
 $('form').submit(function(event) {
 
-  $('input[name="name"], input[name="email"], textarea').removeClass('error');
+  $('input[name="name"], input[name="email"], input[name="phone"], textarea').removeClass('error');
 
   if ($('input[name="name"]').val() === '') {
     $('p.error').addClass('active').html('Please enter your name.');
@@ -31,6 +31,12 @@ $('form').submit(function(event) {
     return false;
   }
 
+  if ($('input[name="phone"]').val() === '') {
+    $('p.error').addClass('active').html('Please enter your phone number.');
+    $('input[name="phone"]').focus();
+    return false;
+  }
+
   if ($("textarea").val() === "") {
     $('p.error').addClass('active').html('Please enter your message.');
     $('textarea').focus();
@@ -50,7 +56,7 @@ $('form').submit(function(event) {
   request = $.ajax({
     url: 'contact.php',
     // url: 'trista_mccleary@yahoo.com',
-    type: 'post',
+    type: 'POST',
     data: serializedData
   });
 
