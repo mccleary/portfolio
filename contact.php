@@ -74,7 +74,9 @@ label,a,body {
 
 <div class="respond">
 	<h1>Thank you!</h1>
-	<p>Thank you for submitting the form. We will contact you soon!</p>
+	<p>Thank you for submitting the form. I will contact you soon!</p>
+
+  <h3>Click here to Return to <a href="http://codeandcoffeelife.com/">Trista McCleary</a></h3>
 </div>
 
 </body>
