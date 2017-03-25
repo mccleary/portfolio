@@ -103,6 +103,7 @@ header h1 {
     display: none; } }
 nav ul {
   padding: 30px 0 35px;
+  /*position: fixed;*/
   width: 100%;
   background: #fbcfc6;
   border-bottom: 5px solid #d8c563;
