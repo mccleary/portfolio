@@ -38,6 +38,7 @@ if( empty($errors) ) {
 	header('Location: thank-you.html');
 }
 ?>
+
 <!Doctype html>
 <html lang="en">
 <head>

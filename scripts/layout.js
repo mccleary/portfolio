@@ -53,18 +53,18 @@ jQuery(document).ready(function($) {
   });
 
   // Init Isotope
-  var $container = $('.isotope').isotope({
-    itemSelector: '.element-item',
-    masonry: {
-      columnWidth: '.grid-sizer'
-    }
-  });
+  // var $container = $('.isotope').isotope({
+  //   itemSelector: '.element-item',
+  //   masonry: {
+  //     columnWidth: '.grid-sizer'
+  //   }
+  // });
 
   // Change size of item by toggling .gigante
-  $container.on( 'click', '.element-item img', function() {
-    $(this).parent().toggleClass('gigante');
-    $container.isotope('layout');
-  });
+  // $container.on( 'click', '.element-item img', function() {
+  //   $(this).parent().toggleClass('gigante');
+  //   $container.isotope('layout');
+  // });
 
   // filter functions
   var filterFns = {
