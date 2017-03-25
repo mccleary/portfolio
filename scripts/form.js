@@ -62,7 +62,7 @@ $('form').submit(function(event) {
 
   request.done(function (response, textStatus, jqXHR){
     $('p.error').hide();
-    $('p.message').html('Contact Form Submitted! I will be in touch soon.').fadeOut(2000);
+    $('p.message').html('Contact Form Submitted! I will be in touch soon.').fadeOut(10000);
   });
 
   request.fail(function (jqXHR, textStatus, errorThrown){
